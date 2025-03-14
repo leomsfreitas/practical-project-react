@@ -1,0 +1,22 @@
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.formulario form {
+    flex-grow: 1;
+    max-width: 40%;
+    background-color: #191627;
+    border-radius: 20px;
+    padding: 26px 64px;
+}
+
+.botao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
