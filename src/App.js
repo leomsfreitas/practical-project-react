@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./componentes/Header/Header";
 import Formulario from "./componentes/Formulario/Formulario";
-import Area from "./componentes/Area/Area";
+import Area from "./componentes/Area/Secao";
 
 function App() {
 
@@ -43,7 +43,7 @@ function App() {
   const listaSecoes = secoes.map(secao => secao.nome)
   const [produtos, setProdutos] = useState([])
 
-  const adicionaProduto = (produto) => {
+  const addProduto = (produto) => {
     const listaNova = produtos.slice();
     listaNova.push(produto);
     setProdutos(listaNova);
@@ -52,7 +52,7 @@ function App() {
   return (
     <div >
       <Header />
-      <Formulario secoes={listaSecoes} aoProdutoCadastrado={produto => adicionaProduto(produto)} />
+      <Formulario secoes={listaSecoes} aoProdutoCadastrado={produto => addProduto(produto)} />
 
       {secoes.map(secao => {
         const filteredProducts = produtos.filter(produto => produto.secao === secao.nome);

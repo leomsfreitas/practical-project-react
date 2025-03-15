@@ -1,5 +1,5 @@
 import React from "react";
-import './Area.css';
+import './Secao.css';
 import Produto from "../Produto/Produto";
 
 const Secao = (props) => {
@@ -12,7 +12,7 @@ const Secao = (props) => {
     }
     return (
 
-        (props.produtos.length > 0) ? <section className="area" style={corDeFundo}>
+        (props.produtos.length > 0) ? <section className="secao" style={corDeFundo}>
             <h3 style={corSublinhado}>{props.nome}</h3>
 
             <div className="produtos">
