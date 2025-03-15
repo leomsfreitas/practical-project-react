@@ -1,10 +1,9 @@
 .botao {
     background-color: #DD7631;
     color: white;
-    font-weight: bold;
     border-radius: 15px;
     font-size: 18px;
-    padding: 20px;
+    padding: 16px;
     border: none;
     cursor: pointer;
     margin: 32px 0;

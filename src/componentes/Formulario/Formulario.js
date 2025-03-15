@@ -45,7 +45,7 @@ const Formulario = (props) => {
     return (
         <section className="formulario">
             <form onSubmit={aoSalvar}>
-                <h2>Dados do produto:</h2>
+                <h2>Cadastrar produto:</h2>
                 <ListaSuspensa 
                     id="secao"
                     label="Seção:"

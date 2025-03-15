@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./componentes/Header/Header";
 import Formulario from "./componentes/Formulario/Formulario";
-import Area from "./componentes/Area/Secao";
+import Area from "./componentes/Secao/Secao";
 
 function App() {
 
@@ -15,33 +15,28 @@ function App() {
   const secoes = [
     {
         nome: 'Computadores',
-        corPrimaria: '#DD7631',
-        corSecundaria: '#191627'
+        corPrimaria: '#DD7631'
     },
     {
         nome: 'Acessórios',
-        corPrimaria: '#DD7631',
-        corSecundaria: '#2A2A3B'
+        corPrimaria: '#DD7631'
     },
     {
         nome: 'Impressoras',
-        corPrimaria: '#DD7631',
-        corSecundaria: '#3B3B4F'
+        corPrimaria: '#DD7631'
     },
     {
         nome: 'Games',
-        corPrimaria: '#DD7631',
-        corSecundaria: '#4C4C63'
+        corPrimaria: '#DD7631'
     },
     {
         nome: 'Gadgets',
-        corPrimaria: '#DD7631',
-        corSecundaria: '#5D5D77'
+        corPrimaria: '#DD7631'
     }
   ];
 
-  const listaSecoes = secoes.map(secao => secao.nome)
-  const [produtos, setProdutos] = useState([])
+  const listaSecoes = secoes.map(secao => secao.nome);
+  const [produtos, setProdutos] = useState([]);
 
   const addProduto = (produto) => {
     const listaNova = produtos.slice();
@@ -60,7 +55,6 @@ function App() {
           key={secao.nome}
           nome={secao.nome}
           corPrimaria={secao.corPrimaria}
-          corSecundaria={secao.corSecundaria}
           produtos={filteredProducts}
           marcas={marcas}
         />;

@@ -4,15 +4,19 @@
     margin: 80px 0;
     padding: 20px;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .formulario form {
     flex-grow: 1;
     max-width: 40%;
-    background-color: #191627;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     padding: 26px 64px;
+}
+
+.formulario h2 {
+    font-weight: medium; 
 }
 
 .botao-container {

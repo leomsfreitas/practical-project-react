@@ -4,7 +4,8 @@ import "./Header.css"
 function Header() {
     return(
         <header className="header">
-            <span>Loja de Informática</span>
+            <span className="light-text">Tech</span>
+            <span className="bold-text">Store</span>
         </header>
     )
 }

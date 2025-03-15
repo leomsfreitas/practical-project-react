@@ -5,7 +5,7 @@
 .campo-texto label {
     display: block;
     margin-bottom: 8px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .campo-texto input {
@@ -13,11 +13,7 @@
     width: 100%;
     font-size: 20px;
     padding: 16px;
-    border-radius: 20px;
+    border-radius: 15px;
+    border: none;
     box-sizing: border-box;
-}
-
-.campo-texto input:focus {
-    border-color: #191627;
-    border-width: 2px;
 }
